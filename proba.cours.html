@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body style="background-color:#180148;">
+
+    <div class="flex-container-cours">
+
+        <div class="flex-item-cours">
+            <div class="text">
+                <center>
+                    <h1><u><b>Chapitre 1</h1>
+                    <h2><br><br>Notion de Probabilité</h2>
+                </center>
+                    <h3><br><br>1.1 Ensembles et événements</b></u></h3>
+                        <p><br>Le point de départ de l’étude d’une expérience aléatoire consiste à définir l’ensemble Ω de tous les résultats possibles.
+                            <b><br>Exemples :</p></b>
+                            <ul>
+                                <li>partie de pile ou face : Ω = {P,F}.</li>
+                                <br>
+                                <li>lancer d’un dé : Ω = {1,2,3,4,5,6}.</li>
+                                <br>
+                                <li>2 parties de pile ou face : Ω = {(P,P),(P,F),(F,P),(F,F)}</li>
+                            </ul>
+                            <p>Dans ce qui précède, il importe de distinguer l’ensemble à deux éléments {P, F } et le <i>couple</i> ordonné (P,F). On a ainsi {P,F} = {F,P} mais (P,F) ≠ (F,P). A une expérience aléatoire sont attachés des événements qui se
+                                réalisent ou non selon le résultat de l’expérience. Par exemple, dans le lancer d’un dé, on peut s’intéresser à l’événement “le résultat est pair”. Mathématiquement, un événement est identifié au sous-ensemble de Ω formé
+                                de tous les résultats qui le réalisent. Ainsi, l’événement “le résultat est pair” dans le lancer d’un dé est le sous- ensemble {2, 4, 6}. Dans cette identification, l’ensemble vide représente l’événement impossible et l’ensemble
+                                Ω l’événement certain.
+                            </p>
+                            <center>
+                                <p>Correspondance entre notions ensemblistes et notions probabilistes</p>
+                            </center>
+                            <center>
+                                <table>
+                                    <tr>
+                                        <td>Notation</td>
+                                        <td>Vocabulaire ensembliste</td>
+                                        <td>Vocabulaire probabiliste</td>
+                                    </tr>
+                                    <tr>
+                                        <td>∅</td>
+                                        <td>Ensemble vide</td>
+                                        <td>Evénement impossible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ω</td>
+                                        <td>Partie pleine</td>
+                                        <td>Evénement certain</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ω</td>
+                                        <td>élément de Ω</td>
+                                        <td>Résultat possible ou éventualité</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>Partie de Ω</td>
+                                        <td>Evénement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A ∩ B</td>
+                                        <td>Intersection de A et B</td>
+                                        <td>Evénement “A et B”</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A ∪ B</td>
+                                        <td>Union de A et B</td>
+                                        <td>Evénement “A ou B”</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A<sup>c</sup></td>
+                                        <td>Complémentaire de A</td>
+                                        <td>Contraire de A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A ⊂ B</td>
+                                        <td>A est inclus dans B</td>
+                                        <td>A implique B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A ∩ B = ∅</td>
+                                        <td>A et B disjoints</td>
+                                        <td>A et B incompatibles</td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </p>
+                        <h3><br><br><u>1.2 Axiomes de base</b>
+                            </u>
+                        </h3>
+                        <p><br>Soit Ω un ensemble fini, représentant l’ensemble de tous les résultats possibles d’une expérience aléatoire. On a vu que les événements relatifs à cette expérience aléatoire s’identifiaient aux sous-ensembles de Ω. Si A et
+                            B sont deux événements, l’événement A ∩ B est réalisé si et seulement si les deux événements A et B sont réalisés. L’événement A ∪ B est réalisé si et seulement si l’un des deux (au moins) est réalisé. Les événements A et B
+                            sont dits incompatibles si A ∩ B = ∅, c’est-à-dire, du point de vue ensembliste, s’ils sont disjoints.
+                            <br>L’idée intuitive de probabilité d’un événement est liée à la notion de fréquence : pour vérifier si une piéce est non truquée, on la lance un grand nombre de fois et on calcule la fréquence d’apparition du résultat pile.
+                            Plus généralement, pour estimer la probabilité d’un événement A, on cherche à renouveler un grand nombre fois l’expérience aléatoire et on calcule la fréquence de réalisation de A. Il est donc naturel de poser que la probabilité
+                            d’un événement est un nombre compris entre 0 et 1 (qu’on exprimera souvent en %) et que les probabilités de deux événements incompatibles s’ajoutent. On est ainsi conduit à la définition suivante. Rappelons que P(Ω) désigne
+                            l’ensemble de toutes les parties de Ω, donc l’ensemble des événements.</p>
+                        <p><b>Définition 1.2.1</b> Une probabilité sur l’ensemble fini Ω est une application P de P(Ω) dans l’intervalle [0, 1] telle que</p>
+                        <ul>
+                            <li>P(Ω)=1</li>
+                            <br>
+                            <li>Pour tous événements A et B tels que A ∩ B = ∅, on a P(A ∪ B) = P(A)+P(B).</li>
+                        </ul>
+                        <p>Le premier axiome énonce que la probabilité d’un événement certain est égale à 1. Le second axiome est appelé axiome d’additivité. Le couple (Ω, P) est appelé espace de probabilité (fini). On déduit de la définition les propriétés
+                            élémentaires suivantes :</p>
+                        <ol>
+                            <li>P(∅) = 0 et, plus généralement, P(A<sup>c</sup>) = 1 − P(A). Il suffit de remarquer que A ∩ A<sup>c</sup> = ∅ et A∪A<sup>c</sup> =Ω.</li>
+                            <br>
+                            <li>Si A<sub>1</sub>, A<sub>2</sub>, . . . ,A<sub>n</sub> sont des événements deux à deux incompatibles (c’est-à-dire tels que A<sub>i</sub>∩A<sub>j</sub> = ∅ pour i ̸= j), P(A<sub>1</sub> ∪ A<sub>2</sub> · · · ∪ A<sub>n</sub>)
+                                = P(A<sub>1</sub>) + P(A<sub>2</sub>) + · · · + P(A<sub>n</sub>) (récurrence sur n).</li>
+                            <br>
+                            <li>Si A ⊂ B, P(A) ≤ P(B). On a en effet, dans ce cas, P(B) = P(A) + P(B ∩ A<sup>c</sup>). L’événement B∩A<sup>c</sup> est noté B\A (quand A ⊂ B). On a ainsi P(B\A) = P(B)−P(A).</li>
+                        </ol>
+
+                        <br>
+                        <p><b>Proposition 1.2.2</b> Si A et B sont deux événements quelconques,</p>
+                        <ul>
+                            <li>P(A ∪ B) = P(A) + P(B) − P(A ∩ B).</li>
+                        </ul>
+                        <p><b>Démonstration :</b> Les événements A ∩ B, A ∩ B<sup>c</sup> et B ∩ A<sup>c</sup> étant deux à deux incompatibles, on a</p>
+                        <ul>
+                            <li>P(A∪B) = P(A∩B)+P(A∩B<sup>c</sup>)+P(B∩A<sup>c</sup>)</li>
+                            <li>P(A) = P(A∩B)+P(A∩B<sup>c</sup>)</li>
+                            <li>(B) = P(A∩B)+P(B∩A<sup>c</sup>).</li>
+                        </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

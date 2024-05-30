@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-cours {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container .flex-item {
+    margin: 25px;
+    padding: 4.5em 5em;
+    min-height: 260px;
+    border-radius: 5px;
+}
+
+.flex-container-cours .flex-item-cours {
+    margin: auto;
+    max-width: 850px;
+    background-color: rgb(188, 171, 171);
+    border-radius: 30px;
+    padding: 2.5em 2.5em;
+}
+
+.flex-container .flex-item:focus {
+    box-shadow: 0 0 3pt 2pt red;
+}
+
+.flex-container .flex-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.flex-container .flex-item a span {
+    transform: scale(0.65);
+}
+
+.tilt {
+    box-shadow: 0 5px 5px 10px rgba(165, 69, 69, 0.7);
+    transform: perspective(500px) rotateX(5deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+
+.tilt:hover {
+    box-shadow: 0 40px 70px -15px rgba(0, 0, 0, 0.7);
+}
+
+.bg-one {
+    background: linear-gradient(45deg, #ff194b, #8215f0);
+}
+
+.bg-two {
+    background: linear-gradient(45deg, #ff5f4b, #821564);
+}
+
+.bg-three {
+    background: linear-gradient(45deg, #ff00bb, #82000f);
+}
+
+.bg-four {
+    background: linear-gradient(45deg, #890867, #7f0413);
+}
+
+.flex-item span>img {
+    width: 200px;
+}
+
+.flex-item .text {
+    color: white;
+    font-weight: 800;
+    font-family: Courier;
+    font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.flex-item-cours .text {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+input+label+article {
+    display: none;
+}
+
+input:checked+label+article,
+div>label {
+    display: table-cell;
+    padding: 0.5em;
+    vertical-align: top;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+
+/*########MATHS*######################*/
+
+.lim {
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+}
+
+.lim:before {
+    content: "n\002192+\00221E";
+    font-size: .5em;
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+}
+
+.math {
+    font-family: times;
+    padding: 0 .1em;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+.ct {
+    text-align: center
+}
+
+.align {
+    display: inline-table;
+    vertical-align: middle
+}
+
+.calign {
+    display: table;
+    margin: 0 auto
+}
+
+.calign .row,
+.align .row {
+    display: table-row
+}
+
+.calign .row .cell,
+.align .row .cell {
+    display: table-cell;
+    text-align: center;
+    padding-left: .1em;
+    padding-right: .1em
+}
+
+.calign .row .l,
+.align .row .l {
+    display: table-cell;
+    text-align: left
+}
+
+.calign .row .r,
+.align .row .r {
+    display: table-cell;
+    text-align: right
+}
+
+.lrp {
+    display: inline-block;
+    border-left: .15em solid;
+    border-right: 2px solid;
+    border-radius: .7em;
+    padding: .3em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: .1em
+}
